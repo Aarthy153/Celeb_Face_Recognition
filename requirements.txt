@@ -1,4 +1,6 @@
 streamlit==1.4.0
+sklearn
+scikit-learn
 Pillow
 numpy
 joblib==1.0.1
