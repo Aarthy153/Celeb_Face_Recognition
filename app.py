@@ -1,11 +1,10 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-import pickle
+import joblib
 
-# Load the trained model using pickle
-with open('saved_model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file) 
+# Load the trained model
+model = joblib.load('saved_model.pkl')
 
 # Define a function to process the uploaded image
 def process_image(uploaded_image):
