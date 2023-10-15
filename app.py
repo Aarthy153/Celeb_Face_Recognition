@@ -4,8 +4,8 @@ import numpy as np
 import pickle
 
 # Load the trained model using pickle
-with open('model\saved_model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+with open('model/saved_model.pkl', 'rb') as model_file:
+    model = pickle.load(model_file) 
 
 # Define a function to process the uploaded image
 def process_image(uploaded_image):
