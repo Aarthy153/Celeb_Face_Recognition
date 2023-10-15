@@ -21,7 +21,7 @@ def process_image(uploaded_image):
     # Predict using the trained model
     predicted_class = model.predict(uploaded_image_array)
 
-    class_labels = {0: 'Serena Williams', 1: 'Lionel Messi', 2: 'Maria Sharapova'}
+    class_labels = {"Maria_Sharapova": 0, "Lionel_Messi": 1, "Virat_Kohli": 2, "Serena_Williams": 3, "Roger_Federer": 4}
     predicted_celebrity = class_labels.get(predicted_class[0], 'Unknown')
 
     return predicted_celebrity
